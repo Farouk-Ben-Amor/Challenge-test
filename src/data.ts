@@ -1,13 +1,20 @@
 /* @ts-ignore */
-import hand from "./assets/img.png";
+//import hand from "./assets/img.png";
 /* @ts-ignore */
-import tube from "./assets/tube.png";
+//import tube from "./assets/tube.png";
 /* @ts-ignore */
-import cloud from "./assets/cloud.png";
+//import cloud from "./assets/cloud.png";
 /* @ts-ignore */
-import microscope from "./assets/microscope.jpg";
+//import microscope from "./assets/microscope.jpg";
 /* @ts-ignore */
-import castle from "./assets/castle.png";
+//import castle from "./assets/castle.png";
+
+const cloudUrl = "https://res.cloudinary.com/ds0lmlupd/image/upload/f_auto,q_auto/Cloud";
+const castleUrl = "https://res.cloudinary.com/ds0lmlupd/image/upload/f_auto,q_auto/Castle";
+const microscopeUrl = "https://res.cloudinary.com/ds0lmlupd/image/upload/f_auto,q_auto/Microscope";
+const tubeUrl = "https://res.cloudinary.com/ds0lmlupd/image/upload/f_auto,q_auto/Tube";
+const handUrl = "https://res.cloudinary.com/ds0lmlupd/image/upload/f_auto,q_auto/Hand";
+
 
 export interface Subject {
   id: number;
@@ -16,36 +23,25 @@ export interface Subject {
 }
 
 export const subjects: Subject[] = [
-  { id: 1, name: "Chemie", image: tube },
-  { id: 2, name: "Physik", image: hand },
-  { id: 3, name: "Mathe", image: hand },
-  { id: 4, name: "WAT", image: hand },
-  { id: 5, name: "Deutsch", image: hand },
-  { id: 6, name: "Geografie", image: hand },
-  { id: 7, name: "Sowi", image: hand },
-  { id: 8, name: "Psychologie", image: hand },
-  { id: 9, name: "Ethik", image: cloud },
-  { id: 10, name: "Politik", image: hand },
-  { id: 11, name: "Informatik", image: hand },
-  { id: 12, name: "Gewi", image: hand },
-  { id: 13, name: "Sach", image: hand },
-  { id: 14, name: "Geschichte", image: castle },
-  { id: 15, name: "Tube", image: tube },
-  { id: 16, name: "Biologie", image: microscope },
-  { id: 17, name: "Ethik", image: cloud },
-  { id: 18, name: "Geschichte", image: castle },
-  { id: 19, name: "Physik", image: hand },
-  { id: 20, name: "Mathe", image: hand },
-  { id: 21, name: "WAT", image: hand },
-  { id: 22, name: "Deutsch", image: hand },
-  { id: 23, name: "Geografie", image: hand },
-  { id: 24, name: "Sowi", image: hand },
-  { id: 25, name: "Psychologie", image: hand },
-  { id: 26, name: "Politik", image: hand },
-  { id: 27, name: "Informatik", image: hand },
-  { id: 28, name: "Gewi", image: hand },
-  { id: 29, name: "Sach", image: hand },
-  { id: 30, name: "Physik", image: hand },
+  { id: 1, name: "Ethik", image: cloudUrl },
+  { id: 2, name: "Geschichte", image: castleUrl },
+  { id: 3, name: "Biologie", image: microscopeUrl },
+  { id: 4, name: "Chemie", image: tubeUrl }, 
+  { id: 5, name: "Physik", image: handUrl },
+  { id: 6, name: "Politik", image: handUrl },
+  { id: 7, name: "Gewi", image: handUrl },
+  { id: 8, name: "Mathe", image: handUrl },
+  { id: 9, name: "Psychologie", image: handUrl },
+  { id: 10, name: "Philosophie", image: handUrl },
+  { id: 11, name: "Informatik", image: handUrl },
+  { id: 12, name: "Nawi", image: handUrl },
+  { id: 13, name: "WAT", image: handUrl },
+  { id: 14, name: "Deutsch", image: handUrl },
+  { id: 15, name: "Geografie", image: handUrl },
+  { id: 16, name: "Recht", image: handUrl },
+  { id: 17, name: "Sach", image: handUrl },
+  { id: 18, name: "Sowi", image: handUrl },
+  
 ];
 
 export interface Schulart {

@@ -11,7 +11,7 @@ function App() {
     console.log(data);
   };
   const clickCard = (subjectId: number) => {
-    setClickedSubject(subjectId);
+    setClickedSubject(prevState => (prevState === subjectId ? null : subjectId));
   };
 
   return (
